@@ -1,0 +1,19 @@
+def Rotation(input,n):
+    L_First = input[0:n]
+    L_Second = input[n:]
+    R_First = input[0:-n]
+    R_Second = input[-n:]
+    r=R_Second + R_First
+    l=L_Second + L_First
+    if(r==l):
+        print("YES")
+    else:
+        print("NO")
+y=[]
+s=0
+x=int(input())
+for i in range(x):
+    y.append(input())
+for j in range(x):
+    z=y[j]
+    Rotation(z,1)
