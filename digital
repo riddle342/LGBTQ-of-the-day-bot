@@ -1,0 +1,19 @@
+from itertools import permutations
+p=[]
+q=input("").split(" ")
+c=0
+g=0
+for i in q:
+    a=[int(x) for x in str(i)]
+    h=max(a)
+    l=min(a)
+    s=h*11+l*7
+    if(s>=100):
+        s=s-100
+    if(s<=9):
+        s=s
+    if(10<=s<=99):
+        s=s//10
+    p.append(s)
+p.sort()
+
